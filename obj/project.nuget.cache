@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YcnUqpWGO18nCXhfJrWhySfywrzfPUkIZGERWKXEGXMh4RCTXCgu6JsnVwogA6Fkyi055ogvil72v/1WVZNLcw==",
+  "success": true,
+  "projectFilePath": "C:\\CalculatorApp\\CalculatorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sony\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
