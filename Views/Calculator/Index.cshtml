@@ -9,13 +9,13 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="num1">First number</label>
-                    <input type="number" class="form-control" id="num1" ng-model="num1" placeholder="Enter number">
+                    <input type="text" class="form-control" id="num1" ng-model="num1" placeholder="Enter number">
                 </div>
             </div><br />
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="num2">Second number</label>
-                    <input type="number" class="form-control" id="num2" ng-model="num2" placeholder="Enter number">
+                    <input type="text" class="form-control" id="num2" ng-model="num2" placeholder="Enter number">
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
 
         </div>
 
-        <button class="btn btn-primary" ng-click="addnumber()">Calculate</button>
+        <button class="btn btn-primary" ng-click="calculatenumber()">Calculate</button>
 
         <p>Result: {{result}}</p>
     </div>

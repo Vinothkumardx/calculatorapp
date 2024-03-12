@@ -18,6 +18,7 @@ namespace CalculatorApp.Controllers
         [HttpPost]
         public async Task<IActionResult> index(Calculatemodel model)
         {
+            
            
             return View(model);
         }

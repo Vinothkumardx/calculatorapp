@@ -4,6 +4,10 @@ namespace CalculatorApp.Models
 {
     public class Calculatemodel
     {
+        [Key]
+        public int Id { get; set; }
+       
+
         [Required]
         public double Num1 { get; set; }
 
