@@ -8,6 +8,7 @@ C:\CalculatorApp\bin\Debug\net6.0\CalculatorApp.deps.json
 C:\CalculatorApp\bin\Debug\net6.0\CalculatorApp.runtimeconfig.json
 C:\CalculatorApp\bin\Debug\net6.0\CalculatorApp.dll
 C:\CalculatorApp\bin\Debug\net6.0\CalculatorApp.pdb
+C:\CalculatorApp\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.csproj.AssemblyReference.cache
 C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.AssemblyInfoInputs.cache
@@ -21,10 +22,16 @@ C:\CalculatorApp\obj\Debug\net6.0\staticwebassets.development.json
 C:\CalculatorApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\CalculatorApp\obj\Debug\net6.0\scopedcss\bundle\CalculatorApp.styles.css
 C:\CalculatorApp\obj\Debug\net6.0\scopedcss\projectbundle\CalculatorApp.bundle.scp.css
+C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.csproj.CopyComplete
 C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.dll
 C:\CalculatorApp\obj\Debug\net6.0\refint\CalculatorApp.dll
 C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.pdb
 C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.genruntimeconfig.cache
 C:\CalculatorApp\obj\Debug\net6.0\ref\CalculatorApp.dll
-C:\CalculatorApp\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\CalculatorApp\obj\Debug\net6.0\CalculatorApp.csproj.CopyComplete
+C:\CalculatorApp\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\CalculatorApp\bin\Debug\net6.0\System.Web.Razor.dll
+C:\CalculatorApp\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\CalculatorApp\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\CalculatorApp\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\CalculatorApp\bin\Debug\net6.0\System.Web.WebPages.dll
+C:\CalculatorApp\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

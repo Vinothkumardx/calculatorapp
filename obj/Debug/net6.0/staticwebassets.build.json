@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IpaM17ZQrM2fnUwWPi5T2VA3cQ//6OJiMA2YFKYTi0M=",
+  "Hash": "enCNpKfrLt/c3f1sEcluRCNVimVSDEKnEUp7/mwUUNc=",
   "Source": "CalculatorApp",
   "BasePath": "_content/CalculatorApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\CalculatorApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CalculatorApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\CalculatorApp\\wwwroot\\css\\grid.css",
+      "SourceId": "CalculatorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CalculatorApp\\wwwroot\\",
+      "BasePath": "_content/CalculatorApp",
+      "RelativePath": "css/grid.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\grid.css"
     },
     {
       "Identity": "C:\\CalculatorApp\\wwwroot\\css\\site.css",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\calculatorController.js"
+    },
+    {
+      "Identity": "C:\\CalculatorApp\\wwwroot\\js\\Getalldatascript.js",
+      "SourceId": "CalculatorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CalculatorApp\\wwwroot\\",
+      "BasePath": "_content/CalculatorApp",
+      "RelativePath": "js/Getalldatascript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Getalldatascript.js"
     },
     {
       "Identity": "C:\\CalculatorApp\\wwwroot\\js\\site.js",

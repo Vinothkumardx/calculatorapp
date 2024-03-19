@@ -34,17 +34,17 @@ app.controller('myctrl', function ($scope, $http) {
                 console.log("Data:", data);
                
                 if ($scope.mathOption == "+") {
-                    $scope.result = parseInt($scope.num1) + parseInt($scope.num2);
+                    $scope.result = Num1 + Num2;
                 }
                 else if ($scope.mathOption == "-") {
-                    $scope.result = parseInt($scope.num1) - parseInt($scope.num2);
+                    $scope.result = Num1 - Num2;
                 }
                else  if ($scope.mathOption == "*") {
-                    $scope.result = parseInt($scope.num1) * parseInt($scope.num2);
+                    $scope.result = Num1 * Num2;
                 }
                else if ($scope.mathOption == "/") {
                     if (parseInt($scope.num2) !== 0) {
-                        $scope.result = parseInt($scope.num1) / parseInt($scope.num2);
+                        $scope.result = Num1 / Num2;
                     } else {
                         
                         $scope.result = "Cannot divide by zero";
@@ -55,9 +55,16 @@ app.controller('myctrl', function ($scope, $http) {
                 }
             })
             .catch(function (error) {
-                console.error('Error fetching data:', error);
-                $scope.result = "An error occurred while fetching data from the API.";
-            })
+                if (error.response.status == 400) {
+                    $scope.result = "Validation errors: " + JSON.stringify(error.data);
+
+                }
+                else {
+                    console.error('Error fetching data:', error);
+                    $scope.result = "An error occurred while fetching data from the API.";
+
+                }
+         })
             .finally(function () {
                 // Reset input fields and mathoption after calculation
                 $scope.num1 = "";
