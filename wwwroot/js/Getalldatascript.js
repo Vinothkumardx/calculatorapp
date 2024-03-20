@@ -13,23 +13,30 @@ app.controller('CalculatorController', function ($scope, $http) {
     $scope.updateData = function (calculate) {
         $http.put('https://localhost:7028/api/Calculator/Updatevalue', calculate)
             .then(function (response) {
-                console.log('Data updated successfully:', response);
+                alert('Data updated successfully:', response);
             })
             .catch(function (error) {
                 console.error('Error updating data:', error);
             });
     };
     $scope.delete = function (calculate) {
-        $http.delete('https://localhost:7028/api/Calculator/Deletevalue', { data: calculate })
-            .then(function (response) {
-                console.log('data delete sussesfully', response);
-                var index = $scope.calculations.indexOf(calculate);/*indexof is used in delete particular data*/
-                if (index !== -1) {
-                    $scope.calculations.splice(index, 1);
-                }
-            })
-            .catch(function (error) {
-                console.log('Error deleting data:', error);
-            });
+        // Ask for confirmation before deleting
+        var confirmation = confirm("Are you sure you want to delete this data?");
+        if (confirmation) {
+            var itemid = calculate.id;
+            $http.delete('https://localhost:7028/api/Calculator/Deletevalue?Id=' + itemid, { data: calculate })/* delete web api used add id value*/
+                .then(function (response) {
+                   
+                    var index = $scope.calculations.indexOf(calculate);
+                    if (index !== -1) {
+                        $scope.calculations.splice(index, 1);
+                    }
+                    alert('Data deleted successfully');
+                })
+                .catch(function (error) {
+                    console.log('Error deleting data:', error);
+                });
+        }
     };
+
 })

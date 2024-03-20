@@ -3,51 +3,45 @@
 @{
     ViewData["Title"] = "List Page";
 }
-<head>
-    <style>
-        .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    grid-gap: 10px; /* Gap between grid items */
-}
 
-.grid-item {
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-}
-    </style>
-</head>
 
 <h1>All numbers</h1>
 
 <div ng-app="myapp" ng-controller="CalculatorController">
     <!-- Search field -->
-    Search: <input type="text" ng-model="searchQuery" placeholder="Search...">
+    Search: <input type="text" ng-model="searchQuery" placeholder="Id based Search...">
     
-    <!-- Grid container -->
-    <div class="grid-container">
-        <div class="grid-item" ng-repeat="calculate in filteredCalculations = (calculations | filter:searchQuery)"> <!--filter is used fillter the value-->
-            <div>ID: <input type="text" ng-model="calculate.id"></div>
-            <br /> 
-            <div>First Number: <input type="text" ng-model="calculate.num1"></div>
-             <br /> 
-            <div>Second Number: <input type="text" ng-model="calculate.num2"></div>
-             <br /> 
-            <div>Math Option: <input type="text" ng-model="calculate.mathOption"></div>
-             <br /> 
-             
-             
-            <button ng-click="updateData(calculate)" class="btn btn-primary">Update</button>
+    
+   <table class="table table-bordered=1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Number</th>
+            <th>Second Number</th>
+            <th>Math Option</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="calculate in filteredCalculations = (calculations | filter:{id:searchQuery})">
+            <td><input type="text" ng-model="calculate.id"></td>
+            <td><input type="text" ng-model="calculate.num1"></td>
+            <td><input type="text" ng-model="calculate.num2"></td>
+            <td><input type="text" ng-model="calculate.mathOption"></td>
+            <td>
+                <button ng-click="updateData(calculate)" class="btn btn-primary">Update</button>
+            </td>
+            <td>
+                <button ng-click="delete(calculate)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-            <button ng-click="delete(calculate)" class="btn btn-danger">Delete</button>
-
-        </div>
-    </div>
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="~/js/Getalldatascript.js"></script>
-@*<script src="~/css/grid.css"></script>
-*@
+

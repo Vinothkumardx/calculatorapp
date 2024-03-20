@@ -5,8 +5,8 @@ app.controller('myctrl', function ($scope, $http) {
 
        
 
-        var Num1 = parseInt($scope.num1);
-        var Num2 = parseInt($scope.num2);
+        var Num1 = parseFloat($scope.num1);
+        var Num2 = parseFloat($scope.num2);
 
         // Validation: Check if Num1 and Num2 are valid numbers
         if (isNaN(Num1) || isNaN(Num2)) {
