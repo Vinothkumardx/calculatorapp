@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "enCNpKfrLt/c3f1sEcluRCNVimVSDEKnEUp7/mwUUNc=",
+  "Hash": "jQGoYM5e4Zb8VNIkd3POv0ZgH9HcF58n18GOOX0gnlE=",
   "Source": "CalculatorApp",
   "BasePath": "_content/CalculatorApp",
   "Mode": "Default",
@@ -136,6 +136,40 @@
       "OriginalItemSpec": "wwwroot\\js\\Getalldatascript.js"
     },
     {
+      "Identity": "C:\\CalculatorApp\\wwwroot\\js\\LoginScript.js",
+      "SourceId": "CalculatorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CalculatorApp\\wwwroot\\",
+      "BasePath": "_content/CalculatorApp",
+      "RelativePath": "js/LoginScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\LoginScript.js"
+    },
+    {
+      "Identity": "C:\\CalculatorApp\\wwwroot\\js\\RegisterScript.js",
+      "SourceId": "CalculatorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CalculatorApp\\wwwroot\\",
+      "BasePath": "_content/CalculatorApp",
+      "RelativePath": "js/RegisterScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\RegisterScript.js"
+    },
+    {
       "Identity": "C:\\CalculatorApp\\wwwroot\\js\\site.js",
       "SourceId": "CalculatorApp",
       "SourceType": "Discovered",
@@ -151,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\CalculatorApp\\wwwroot\\js\\userScript.js",
+      "SourceId": "CalculatorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\CalculatorApp\\wwwroot\\",
+      "BasePath": "_content/CalculatorApp",
+      "RelativePath": "js/userScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\userScript.js"
     },
     {
       "Identity": "C:\\CalculatorApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
