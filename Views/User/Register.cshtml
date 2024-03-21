@@ -1,0 +1,50 @@
+﻿@model CalculatorApp.Models.RegisterRequest
+
+<h2>Register</h2>
+<!-- Latest version -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<!-- jQuery first, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="~/js/RegisterScript.js"></script>
+
+
+@using (Html.BeginForm("Register","User",FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div ng-app="myapp" ng-controller="myctrl">
+        <div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="username" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter your username" ng-model="username">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter your password" ng-model="password">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email id" ng-model="email">
+    </div>
+    <div class="mb-3">
+      <label for="firstname" class="form-label">First Name:</label>
+      <input type="text" class="form-control" id="firstname" placeholder="Enter your Firstname" ng-model="firstname">
+    </div>
+    <div class="mb-3">
+      <label for="lastname" class="form-label">Last Name:</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Enter your Lastname" ng-model="lastname">
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="Registeradd()">Submit</button>
+
+    <input type="button" class="btn btn-primary btn-block" value="Back" onclick="window.location.href='@Url.Action("Login", "User")';" />
+
+  
+     </form>
+   </div>
+ </diV>
+
+    
+   
+    
+}
